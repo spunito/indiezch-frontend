@@ -1,6 +1,6 @@
 export const SecondComponent = () => {
   return (
-    <div className="pt-20 w-full min-h-screen bg-[#B7CD7F]">
+    <div className="pt-20 w-full min-h-screen bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]">
       <div className="mx-auto max-w-7xl px-4">
         
         {/* Título */}
