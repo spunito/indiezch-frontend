@@ -1,4 +1,5 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Badge } from "@/components/ui/badge"
 
 
 export const FirstComponent = () => {
@@ -19,6 +20,7 @@ export const FirstComponent = () => {
           </TabsList>
 
           <TabsContent value="art-of-day" className="w-full mt-8">
+            <h1 className="font-bold pb-4 text-xl">Artista del día</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div className="overflow-hidden rounded-lg  ">
                 <img src={artista.imageUrl} alt={artista.name}
@@ -27,23 +29,23 @@ export const FirstComponent = () => {
               </div>
 
               <div className="flex flex-col">
+                <div className="flex gap-2 mb-4">
+                  <Badge variant="secondary">{artista.location}</Badge>
+                  <Badge>{artista.genre}</Badge>
+                </div>
+
                 <h2 className="text-3xl font-bold mb-4">{artista.name}</h2>
-                <p className="text-lg mb-2"><strong>Género:</strong> {artista.genre}</p>
-                <p className="text-lg mb-2"><strong>Ubicación:</strong> {artista.location}</p>
                 <p className="text-md">{artista.description}</p>
               </div>
-
+              
             </div>
-
-
+          </TabsContent>
+          <TabsContent value="new-artist" className="w-full mt-8">
+              <div>
+                
+              </div>
           </TabsContent>
         </Tabs>
-        
-
-        
-      
-       
-      
       </div>
     </section>
   )

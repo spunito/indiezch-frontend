@@ -7,7 +7,7 @@ import { InicioComponente } from './components/home/InicioComponente';
 export const IndiezchHome = () => {
  
     return (
-    <div className="overflow-x-hidden">
+    <div >
       <Navbar/>
       <InicioComponente/>
       <FirstComponent/>
