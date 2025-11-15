@@ -1,31 +1,29 @@
-import { Avatar, AvatarImage } from "@radix-ui/react-avatar";
-import { NavigationMenu, NavigationMenuList } from "@radix-ui/react-navigation-menu";
+import { Avatar, AvatarImage } from "@/components/ui/avatar";
 
 export const Navbar = () => {
   return (
-    <NavigationMenu className="fixed top-1 left-1/2 -translate-x-1/2 mx-auto z-50 rounded-xl w-7xl bg-[#1E1E1E] opacity-90 shadow-md">
-      <NavigationMenuList className="flex items-center justify-between p-4 text-white">
-        
-
-        <a href="/" className="flex items-center space-x-2">
-          <Avatar>
+    <nav className="fixed top-0 left-0 z-50 w-full bg-white/70 backdrop-blur-md shadow-md">
+      <div className="max-w-7xl mx-auto flex items-center justify-between h-16 px-6 ">
+        {/* Logo */}
+        <a href="/" className="flex items-center gap-2">
+          <Avatar className="h-10 w-10">
             <AvatarImage
-              className="w-10 h-10 rounded-full object-cover"
               src="https://github.com/spunito.png"
               alt="Logo"
+              className="object-cover"
             />
           </Avatar>
-          <span className="text-xl font-semibold">IndiezCh</span>
+          <span className="text-lg font-semibold">IndiezCh</span>
         </a>
 
-        <div className="flex space-x-6 text-sm">
-          <a href="#" className="hover:underline">Artistas</a>
-          <a href="#" className="hover:underline">Categorias</a>
-          <a href="#" className="hover:underline">Eventos</a>
-          <a href="#" className="hover:underline">Contacto</a>
+        {/* Links */}
+        <div className="flex gap-6 text-sm">
+          <a href="#" className="hover:text-emerald-400 transition-colors">Artistas</a>
+          <a href="#" className="hover:text-emerald-400 transition-colors">Categorias</a>
+          <a href="#" className="hover:text-emerald-400 transition-colors">Eventos</a>
+          <a href="#" className="hover:text-emerald-400 transition-colors">Contacto</a>
         </div>
-
-      </NavigationMenuList>
-    </NavigationMenu>
+      </div>
+    </nav>
   );
 };
