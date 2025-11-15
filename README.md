@@ -1,73 +1,37 @@
-# React + TypeScript + Vite
+# IndiezCh
+**(Nombre provisional)**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+IndiezCh es una plataforma digital enfocada en **visibilizar, difundir y apoyar a bandas y artistas de la escena indie chilena**.  
+El objetivo es crear un espacio donde convivan proyectos emergentes y agrupaciones con trayectoria, permitiendo que sus obras puedan llegar a más personas.
 
-Currently, two official plugins are available:
+Este proyecto está actualmente en desarrollo y su estructura y funcionalidades pueden ir cambiando conforme avance la construcción.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Estado del Proyecto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+IndiezCh está en una fase temprana.  
+Por ahora estoy trabajando la base del frontend, el diseño, la interacción con datos mock y la estructura general de la aplicación.
 
-## Expanding the ESLint configuration
+Estoy tratando de construir este proyecto **sin depender demasiado de IA**, usando herramientas modernas pero manteniendo un enfoque en el aprendizaje personal, la experimentación y las buenas prácticas.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Tecnologías (Stack Provisional)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+El stack final **no está completamente definido todavía**, pero actualmente estoy utilizando:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **React + TypeScript**
+- **Tailwind CSS**
+- **shadcn/ui** para componentes
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+En el futuro podría incluir:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Integración con la **API de Spotify**  
+- Un backend con **Node.js / Express**, **NestJS** o 
+- Base de datos (estoy entre Supabase o PostgreSQL con Prisma)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Contribuciones
+
+Este es un proyecto personal, pero cualquier sugerencia o aporte es bien recibido.
+Puedes abrir un issue o un pull request si deseas contribuir.
