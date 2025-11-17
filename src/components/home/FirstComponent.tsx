@@ -21,7 +21,7 @@ export const FirstComponent = () => {
           <TabsContent value="art-of-day" className="w-full mt-8">
             <h1 className="font-bold pb-4 text-xl">Artista del día</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              <div className="overflow-hidden rounded-lg  ">
+              <div className="overflow-hidden rounded-lg">
                 <img src={artista.imageUrl} alt={artista.name}
                 className="w-full h-full rounded-xl hover:scale-120 object-cover transition-transform duration-300 shadow-md hover:shadow-lg transition" 
                 />
