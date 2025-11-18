@@ -1,4 +1,5 @@
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
@@ -18,10 +19,10 @@ export const Navbar = () => {
 
         {/* Links */}
         <div className="flex gap-6 text-sm">
-          <a href="#" className="hover:text-emerald-400 transition-colors">Artistas</a>
-          <a href="#" className="hover:text-emerald-400 transition-colors">Categorias</a>
-          <a href="#" className="hover:text-emerald-400 transition-colors">Eventos</a>
-          <a href="#" className="hover:text-emerald-400 transition-colors">Contacto</a>
+          <Link to="/artistas" className="hover:text-emerald-400 transition-colors">Artistas</Link>
+          <Link to="/categorias" className="hover:text-emerald-400 transition-colors">Categorias</Link>
+          <Link to="/eventos" className="hover:text-emerald-400 transition-colors">Eventos</Link>
+          <Link to="/contacto" className="hover:text-emerald-400 transition-colors">Contacto</Link>
         </div>
       </div>
     </nav>
