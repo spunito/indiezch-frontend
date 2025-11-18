@@ -1,0 +1,6 @@
+export * from "./Artistas"
+export * from "./DetallesArtistas"
+export * from "./Categorias"
+export * from "./Contacto"
+export * from "./Eventos"
+export * from "./Home"
