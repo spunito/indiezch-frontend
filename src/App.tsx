@@ -6,7 +6,7 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <Router />
+        <Router />
       <Footer />
     </>
   );
