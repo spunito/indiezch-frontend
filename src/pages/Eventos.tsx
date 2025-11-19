@@ -4,12 +4,14 @@ import { eventos } from "@/data/eventos"
 export const Eventos = () => {
   
   return (
-    <section className="pt-20">
+    <section className="pt-16">
       <div className="w-full min-h-screen">
-        <div className="flex flex-col w-full justify-center items-center gap-4 mb-10">
-          <h1>EVENTOS</h1>
-          
-          <span>Entérate de todos los siguientes Eventos en IndiesChz</span>
+        <div className="gap-4 mb-10 bg-green-600 py-10 pl-5 border-b-2 border-b-black ">
+          <div className="max-w-7xl mx-auto">
+            <h1 className="text-xl font-bold text-white">EVENTOS</h1>
+            <p className="text-lg text-white">Entérate de todos los siguientes Eventos en IndiesChz</p>
+          </div>
+        
         </div>
 
         <div className="max-w-7xl mx-auto h-96 bg-zinc-800 rounded-lg flex justify-center items-center">
