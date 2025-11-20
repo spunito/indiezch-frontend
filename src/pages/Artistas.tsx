@@ -8,16 +8,25 @@ import { Link } from 'react-router';
 
 export const Artistas = () => {
   const [buscador, setBuscador] = useState("Patio Solar")
+  
   return (
-    <div className="pt-20">
-
-      <div className="flex flex-col items-center w-full min-h-screen gap-6">
-        <h1 className="font-bold text-3xl">Artistas</h1>
-        <div className="w-full max-w-2xl px-4">
+      
+      <div className="min-h-screen ">
+      <section className="bg-gradient-to-br from-primary/10 to-accent/10 border-b border-border py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h1 className="text-4xl font-bold text-foreground mb-2">Artistas</h1>
+          <p className="text-lg text-muted-foreground">Variedad de los artistas que te gustan</p>
+        </div>
+      </section>
+      
+      <div className='flex flex-col items-center gap-6 mb-10 '>
+        <div className="w-full max-w-2xl px-4 p-6">
           <Input 
             placeholder="Buscar Artistas"
-            className="w-full"
+            className=""
             value={buscador}
+            onChange={(e) => setBuscador(e.target.value)}
+
           />
         </div>
         <div className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-6 ">
