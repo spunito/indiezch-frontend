@@ -1,4 +1,4 @@
-import { Artistas, Categorias, Contacto, DetallesArtistas, Eventos, Home } from "@/pages"
+import { Artistas, Categorias, Contacto, DetallesArtistas, EnviaTuMusica, Eventos, Home } from "@/pages"
 import { Routes , Route} from "react-router-dom"
 
 export const Router = () => {
@@ -9,6 +9,7 @@ export const Router = () => {
       <Route path="/artistas/:id" element={<DetallesArtistas/>} ></Route>
       <Route path="/categorias" element={<Categorias/>} ></Route>
       <Route path="/eventos" element={<Eventos/>} ></Route>
+      <Route path="/envia-tu-musica" element={<EnviaTuMusica/>} ></Route>
       <Route path="/contacto" element={<Contacto/>} ></Route>
     </Routes>
   )
