@@ -2,6 +2,7 @@ import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { Moon, Sun } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTheme } from "../theme-provider";
+import { Button } from '@/components/ui/button';
 
 export const Navbar = () => {
 
@@ -38,13 +39,16 @@ export const Navbar = () => {
           </div>
 
           {/* Toggle Dark Mode */}
-          <div className="flex">
+          <div className="flex gap-5">
             <button 
               onClick={() => setTheme(theme === "light" ? "dark" : "light")}
               className="p-2 rounded-lg hover:bg-muted transition-colors text-foreground"
             >
               {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
             </button>
+            <Button asChild>
+              <Link to="/envia-tu-musica">Envía tu música</Link>
+            </Button>
           </div>
 
         </div>

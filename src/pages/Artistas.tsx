@@ -32,43 +32,43 @@ export const Artistas = () => {
         <div className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-6 ">
           {artistas.map((art) => (
               <Link to={`/artistas/${art.id}`} key={art.id}>
-              <Card className="pt-0 pb-0">
-                <div className="flex">
+                <Card className="pt-0 pb-0 h-full rounded-xl shadow-lg">
+                  <div className="grid grid-cols-1 md:grid-cols-2">
 
-                  {/* Imagen con tamaño fijo (ESTO era lo importante) */}
-                  <div className="h-48 w-48 overflow-hidden">
-                    <img 
-                      src={art.imageUrl} 
-                      alt={art.name} 
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-
-                  {/* Contenido del Card */}
-                  <div className="flex flex-col flex-1">
-                    
-                    <div className="flex gap-2 px-6 mt-2">
-                      <Badge variant="secondary">{art.location}</Badge>
-                      <Badge>{art.genre}</Badge>
+                    {/* Imagen ocupa todo el alto */}
+                    <div className="w-full h-48 md:h-full overflow-hidden rounded-xl">
+                      <img 
+                        src={art.imageUrl} 
+                        alt={art.name} 
+                        className="w-full h-full object-cover"
+                      />
                     </div>
 
-                    <CardHeader className="font-bold">{art.name}</CardHeader>
-                    <CardContent>{art.description}</CardContent>
+                    {/* Contenido */}
+                    <div className="flex flex-col flex-1">
+                      
+                      <div className="flex gap-2 px-6 mt-2">
+                        <Badge variant="secondary">{art.location}</Badge>
+                        <Badge>{art.genre}</Badge>
+                      </div>
 
-                    {/* Botón centrado */}
-                    <div className="mx-auto mt-auto pb-2">
-                      <Button 
-                        variant="outline" 
-                        className="cursor-pointer bg-green-900 hover:bg-green-800 text-white"
-                      >
-                        Explorar
-                      </Button>                
-                    </div> 
+                      <CardHeader className="font-bold">{art.name}</CardHeader>
+                      <CardContent>{art.description}</CardContent>
+
+                      <div className="mx-auto mt-auto pb-2">
+                        <Button 
+                          variant="outline" 
+                          className="cursor-pointer bg-green-900 hover:bg-green-800 text-white"
+                        >
+                          Explorar
+                        </Button>                
+                      </div> 
+                    </div>
+
                   </div>
+                </Card>   
+              </Link>
 
-                </div>
-              </Card>   
-              </Link>    
           ))}
         </div>
       </div>

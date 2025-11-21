@@ -4,7 +4,7 @@ export const InicioComponente = () => {
   return (
     <section
       className="
-        w-full min-h-screen 
+        w-full min-h-[70vh] 
         bg-background 
         text-foreground
         flex items-center justify-center

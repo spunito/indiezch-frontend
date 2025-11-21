@@ -8,7 +8,7 @@ export const FirstComponent = () => {
   const artista = artistas[0]; 
 
   return (
-    <section className="min-h-screen py-16 bg-background text-foreground">
+    <section className=" py-16 bg-background text-foreground">
       <div className="max-w-7xl mx-auto px-4 items-center">
         
 
