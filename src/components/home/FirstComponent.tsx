@@ -8,11 +8,14 @@ export const FirstComponent = () => {
   const artista = artistas[0]; 
 
   return (
-    <section className="w-full min-h-screen py-16 bg-background text-foreground">
-      <div className="flex justify-center max-w-7xl mx-auto px-4 items-center">
+    <section className="min-h-screen py-16 bg-background text-foreground">
+      <div className="max-w-7xl mx-auto px-4 items-center">
+        
 
+        
         <Tabs defaultValue="art-of-day">
 
+        <div className="mx-auto"> 
           <TabsList className="flex space-x-4 bg-muted/40 rounded-lg p-1">
             <TabsTrigger className="rounded-md" value="art-of-day">
               Artista del Día
@@ -22,6 +25,7 @@ export const FirstComponent = () => {
               Nuevos artistas
             </TabsTrigger>
           </TabsList>
+          </div>
 
           {/* ------- Artista del día ------- */}
           <TabsContent value="art-of-day" className="w-full mt-8">
