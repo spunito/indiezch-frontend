@@ -5,7 +5,7 @@ import { Mail, MessageSquare , } from "lucide-react"
 
 export const Contacto = () => {
   return (
-    <div className='min-h-screen'>
+    <div className='min-h-screen '>
 
       <section className="bg-gradient-to-br from-primary/10 to-accent/10 border-b border-border py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -13,8 +13,8 @@ export const Contacto = () => {
           <p className="text-lg text-muted-foreground">Ponte en contacto con nosotros</p>
         </div>
       </section>
-        
-      <div className="max-w-7xl mx-auto py-6">
+      
+      <div className="max-w-7xl mx-auto py-6 ">
         <div className='grid grid-cols-1 md:grid-cols-2 p-3 gap-12'>
           {/* Vista izquierda */}
           <div className='pl-5'>
@@ -42,7 +42,7 @@ export const Contacto = () => {
                     <MessageSquare className="text-accent" size={24} />
                   </div>
                   <div className="">
-                    <h1 className="font-bold text-lg">Email</h1>
+                    <h1 className="font-bold text-lg">Redes Sociales</h1>
                     <p>@Indiezch</p> 
                   </div>
                 </div>
