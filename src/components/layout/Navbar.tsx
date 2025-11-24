@@ -68,6 +68,8 @@ export const Navbar = () => {
             <Link to="/categorias" className="hover:text-emerald-400 transition-colors">Categorias</Link>
             <Link to="/eventos" className="hover:text-emerald-400 transition-colors">Eventos</Link>
             <Link to="/contacto" className="hover:text-emerald-400 transition-colors">Contacto</Link>
+            <Link to="/envia-tu-musica">Envía tu música</Link>
+            
 
             <div className="flex gap-3 pt-2">
               <button
@@ -77,9 +79,7 @@ export const Navbar = () => {
                 {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
               </button>
 
-              <Button asChild variant="outline" className="flex-1">
-                <Link to="/envia-tu-musica">Envía tu música</Link>
-              </Button>
+              
             </div>
           </div>
         )}

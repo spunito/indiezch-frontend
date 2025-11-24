@@ -61,6 +61,64 @@ export const EnviaTuMusica = () => {
                 placeholder="https://open.spotify.com/..."
               />
             </div>
+            <div className="flex flex-col gap-2" >
+              <label>Redes Sociales</label>
+              <div className="md:flex gap-5">
+                <div className="flex flex-col">
+                  <label htmlFor="">Instagram</label>
+                  <input 
+                    type="text" 
+                    className="bg-muted px-4 py-2 rounded-lg text-foreground" 
+                    placeholder="www.instagram.com/tubanda/"
+                    />
+                  </div>
+                <div className="flex flex-col">
+                  <label htmlFor="">Twitter / X</label>
+                  <input 
+                    type="text" 
+                    className="bg-muted px-4 py-2 rounded-lg text-foreground" 
+                    placeholder="x.com/tubanda"
+                    />
+
+                </div>
+                <div className="flex flex-col">
+                  <label htmlFor="">Youtube</label>
+                  <input 
+                    type="text" 
+                    className="bg-muted px-4 py-2 rounded-lg text-foreground" 
+                    placeholder="www.youtube.com/@tubanda"
+                    />
+
+
+                </div>
+              </div>
+
+              {/* <div className="flex gap-5">
+                <label htmlFor="">Instagram</label>
+                <label htmlFor="">Twitter</label>
+                <label htmlFor="">Youtube</label>
+              </div>
+              <div className="flex gap-5">
+                <input 
+                type="text" 
+                className="bg-muted px-4 py-2 rounded-lg text-foreground" 
+                placeholder="https://open.spotify.com/..."
+                />
+                <input 
+                  type="text" 
+                  className="bg-muted px-4 py-2 rounded-lg text-foreground" 
+                  placeholder="https://open.spotify.com/..."
+                />
+                <input 
+                  type="text" 
+                  className="bg-muted px-4 py-2 rounded-lg text-foreground" 
+                  placeholder="https://open.spotify.com/..."
+                />
+
+              </div> */}
+
+
+            </div>
 
             <div className="flex flex-col gap-2">
               <label>Cuéntanos sobre tu música</label>
